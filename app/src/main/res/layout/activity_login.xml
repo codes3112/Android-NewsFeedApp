@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="85dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_account_circle_white_24dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_person_user"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:paddingBottom="15dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@android:color/holo_blue_light" />
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentTop="true"-->
+
+            <EditText
+                android:id="@+id/userPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/userEmail"
+                android:drawableLeft="@drawable/ic_lock_pass"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@android:color/holo_blue_light" />
+
+            <Button
+                android:id="@+id/signBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:padding="15dp"
+                android:background="@drawable/bg_button"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:background="@drawable/bg_button"
+                android:text="New User Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_light_default"  />
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="15dp"
+               >
+            </com.google.android.gms.common.SignInButton>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

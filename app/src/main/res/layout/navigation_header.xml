@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/gradient"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/pPic"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/pPic"
+
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pPic"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="30dp"
+
+        android:src="@drawable/ic_account_circle_white_24dp"/>
+
+
+</RelativeLayout>
